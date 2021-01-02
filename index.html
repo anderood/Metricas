@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Metricas</title>
 </head>
 <body>
-    <header>
-        <div>
+    <header >
+        <div class="container">
             <h1>Metricas</h1>
         </div>
     </header>
     <main>
-        <h2>Metricas</h2>
-        <div>
-            <form action="">
-                <label for="">Data
+        <div class="container">
+            
+            <form action="" class="container">
+                <fieldset>
+                    <legend>Campos de Pesquisas</legend>
+                    <input type="search" name="" id="" placeholder="Pesquise por datas">
+                    <input type="submit" value="Filtro">
 
-                    <input type="search" value="Data">
-                </label>
-                <label for="">Disciplina
-                    <input type="search" value="Data">
-                </label>
-                <button>Pesquisar</button>
+                    <input type="search" name="" id="" placeholder="Pesquise por Disciplinas">
+                    <input type="submit" value="Filtro">
+
+                    <input type="search" name="" id="" placeholder="Pesquise por Tipos">
+                    <input type="submit" value="Filtro">
+
+                    <input type="search" name="" id="" placeholder="Pesquise por Itens">
+                    <input type="submit" value="Filtro">
+                </fieldset>
             </form>
+            
+            <div>
+                <table>
+                    <head>
+                        <thead>
+                            <th>Data</th>
+                            <th>Disciplina</th>
+                            <th>Tipo</th>
+                            <th>Item</th>
+                            <th>Dados da Planilha</th>
+                            <th>Status</th>
+                            <th>Percentual</th>
+                            <th>Projeto</th>
+                            <th>Area</th>
+                        </thead>
+                    </head>
+                </table>
+            </div>
         </div>
-        <div>
-            <table>
-                <head>
-                    <thead>
-                        <th>Data</th>
-                        <th>Disciplina</th>
-                        <th>Tipo</th>
-                        <th>Item</th>
-                        <th>Dados da Planilha</th>
-                        <th>Status</th>
-                        <th>Percentual</th>
-                        <th>Projeto</th>
-                        <th>Area</th>
-                    </thead>
-                </head>
-            </table>
-        </div>
-        <button>Carregar</button>
+        
     </main>
+    <footer>
+        <div>
+            <p>Todos os Direitos @ Bruno</p>
+        </div>
+    </footer>
 </body>
 </html>
