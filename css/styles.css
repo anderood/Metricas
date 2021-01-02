@@ -29,6 +29,10 @@ form {
     padding: 10px 30px;
 }
 
+input {
+    padding: 5px;
+}
+
 table {
     margin: 0 auto;
     text-align: center;
@@ -63,6 +67,14 @@ table {
     justify-content: center;
     position: absolute;
     bottom: 0;
-    
-    
+}
+
+.campoBotao {
+    margin: 30px;
+    text-align: center;
+}
+
+#listarDados {
+    padding: 5px;
+    text-align: center;
 }

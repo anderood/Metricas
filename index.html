@@ -15,41 +15,38 @@
     <main>
         <div class="container">
             
+            <!-- Campo de Pesquisa -->
             <form action="" class="container">
                 <fieldset>
                     <legend>Campos de Pesquisas</legend>
                     <input type="search" name="" id="" placeholder="Pesquise por datas">
-                    <input type="submit" value="Filtro">
-
-                    <input type="search" name="" id="" placeholder="Pesquise por Disciplinas">
-                    <input type="submit" value="Filtro">
-
-                    <input type="search" name="" id="" placeholder="Pesquise por Tipos">
-                    <input type="submit" value="Filtro">
-
-                    <input type="search" name="" id="" placeholder="Pesquise por Itens">
-                    <input type="submit" value="Filtro">
+                    <input type="submit" value="Pesquisar">
                 </fieldset>
             </form>
-            
+
+            <!-- Campo da Tabela -->
             <div>
                 <table>
-                    <head>
-                        <thead>
-                            <th>Data</th>
-                            <th>Disciplina</th>
-                            <th>Tipo</th>
-                            <th>Item</th>
-                            <th>Dados da Planilha</th>
-                            <th>Status</th>
-                            <th>Percentual</th>
-                            <th>Projeto</th>
-                            <th>Area</th>
-                        </thead>
-                    </head>
-                </table>
+                    <thead>
+                        <th>Data</th>
+                        <th>Disciplina</th>
+                        <th>Tipo</th>
+                        <th>Item</th>
+                        <th>Dados da Planilha</th>
+                        <th>Status</th>
+                        <th>Percentual</th>
+                        <th>Projeto</th>
+                        <th>Area</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>                
+            </div>
+
+            <div class="campoBotao">
+                <button id="listarDados">Carregar Dados</button>
             </div>
         </div>
+               
         
     </main>
     <footer>
