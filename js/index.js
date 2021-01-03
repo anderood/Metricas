@@ -1,6 +1,9 @@
 let listarDados = document.querySelector('#listarDados');
 let corpoTr = document.querySelector('.corpoTr');
 
+let filtro = document.querySelector('#filtro');
+
+
 let dados = []
 
 listarDados.addEventListener('click', function(){
@@ -44,7 +47,7 @@ function template() {
     return `
         ${dados.map(item => {
             return `
-                <tr>
+                <tr class="itemLinha">
                     <td>${item.data}</td>
                     <td>${item.volume}</td>
                     <td>${item.tipo}</td>
@@ -59,3 +62,11 @@ function template() {
         }).join('')}
     `
 }
+
+filtro.addEventListener("input", function(){
+    let itensLista = document.querySelectorAll('.itemLista');
+
+   console.log(itensLista)
+
+
+});
