@@ -45,7 +45,7 @@ table {
   }
 
   th, td {
-    padding: 5px 20px;
+    padding: 10px 10px;
     border: 1px solid #d4d4d4;
   }
 
@@ -78,4 +78,9 @@ table {
 #listarDados {
     padding: 5px;
     text-align: center;
+}
+
+
+.invisivel {
+    display: none;
 }

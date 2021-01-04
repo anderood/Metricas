@@ -1,12 +1,13 @@
-let listarDados = document.querySelector('#listarDados');
+let exibirDados = document.querySelector('#exibirDados');
 let corpoTr = document.querySelector('.corpoTr');
 
-let filtro = document.querySelector('#filtro');
+let filtroData = document.querySelector('#filtroData');
+let filtroStatus = document.querySelector('#filtroStatus');
 
 
 let dados = []
 
-listarDados.addEventListener('click', function(){
+exibirDados.addEventListener('click', function(){
     
     let local = "/data/data-copy-peq.json";
 
@@ -48,13 +49,13 @@ function template() {
         ${dados.map(item => {
             return `
                 <tr class="itemLinha">
-                    <td>${item.data}</td>
+                    <td class="itemData">${item.data}</td>
                     <td>${item.volume}</td>
                     <td>${item.tipo}</td>
                     <td>${item.item}</td>
                     <td>#</td>
-                    <td>${item.status}</td>
-                    <td>${item.percentual}</td>
+                    <td class="itemStatus">${item.status}</td>
+                    <td>${item.percentual.toFixed(3)}</td>
                     <td>${item.projeto}</td>
                     <td>${item.area}</td>
                 </tr>
@@ -63,10 +64,42 @@ function template() {
     `
 }
 
-filtro.addEventListener("input", function(){
-    let itensLista = document.querySelectorAll('.itemLista');
+filtroData.addEventListener("input", function(){
 
-   console.log(itensLista)
+    //pega todos que tem esta classe
+    let itensLinha = document.querySelectorAll('.itemLinha');
 
+    for(let i =0; i< itensLinha.length; i++){
+        let data = itensLinha[i];
+
+        let tdData = data.querySelector('.itemData')
+        let datateste = tdData.textContent;
+
+        if(datateste != this.value){
+            data.classList.add('invisivel');
+        } else {
+            data.classList.remove('invisivel');
+        }
+    }
+
+});
+
+filtroStatus.addEventListener("input", function(){
+
+    //pega todos que tem esta classe
+    let itensLinha = document.querySelectorAll('.itemLinha');
+
+    for(let i =0; i< itensLinha.length; i++){
+        let data = itensLinha[i];
+
+        let tdStatus = data.querySelector('.itemStatus')
+        let status = tdStatus.textContent;
+
+        if(status != this.value){
+            data.classList.add('invisivel');
+        } else {
+            data.classList.remove('invisivel');
+        }
+    }
 
 });
