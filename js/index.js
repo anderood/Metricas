@@ -29,13 +29,14 @@ exibirDados.addEventListener('click', function(){
                     keyToArr(response[data][volume]).forEach(tipo => {
                         keyToArr(response[data][volume][tipo]).forEach(item => {
                             const status = response[data][volume][tipo][item].status;
-                            const percentual = response[data][volume][tipo][item].percentual;
-                            const projeto = response[data][volume][tipo][item].projeto;
-                            const area = response[data][volume][tipo][item].area;
+                            let projeto = response[data][volume][tipo][item].projeto
 
-                            dados.push({data, volume, tipo, item, status, percentual, projeto, area})
+                            // console.log(status)
+                           
+                            //dados.push({data, volume, tipo, item, projeto, status_padrao, nao_iniciado})
+                            // dados.push({data, volume, tipo, item, projeto, status-padrao, nao-iniciado, em-producao, produzido, em-leitura, edicao-producao, em-montagem, montado, p1, p2, p3, gravado})
 
-                            corpoTr.innerHTML = template();
+                            //corpoTr.innerHTML = template();
                         })
                     })
                 })
@@ -53,11 +54,20 @@ function template() {
                     <td>${item.volume}</td>
                     <td>${item.tipo}</td>
                     <td>${item.item}</td>
-                    <td>#</td>
-                    <td class="itemStatus">${item.status}</td>
-                    <td>${item.percentual.toFixed(3)}</td>
                     <td>${item.projeto}</td>
-                    <td>${item.area}</td>
+                    <td>${item.status_padrao}</td>
+                    <td>${item.nao_iniciado}</td>
+                    <td>${item.em_producao}</td>
+                    <td>${item.produzido}</td>
+                    <td>${item.em_leitura}</td>
+                    <td>${item.edicao_producao}</td>
+                    <td>${item.em_montagem}</td>
+                    <td>${item.montado}</td>
+                    <td>${item.p1}</td>
+                    <td>${item.p2}</td>
+                    <td>${item.p3}</td>
+                    <td>${item.gravado}</td>
+                    
                 </tr>
             `
         }).join('')}

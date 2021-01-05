@@ -1,0 +1,38 @@
+NÃO INICIADO (ok) = Não Iniciado
+
+MONT. (ok) = Montado
+
+
+AJ 2ª LEITURA (ok) = P1
+AJ 2ª LEITURA (em exec.)
+CONF RESP (ok)
+2ª LEITURA (em exec.)
+2ª LEITURA (ok)
+CONF RESP (em exec.)
+
+LEIT. 1 (em exec.) = Em leitura
+1ª LEITURA (ok)
+1ª LEITURA (em exec.)
+AJ 1ª LEITURA (ok)
+ED PRODUÇÃO (ok)
+ED PRODUÇÃO (em exec.)
+
+
+
+PLAN. (em exec.) = Em produção
+VALID. (ok)
+PROD. (em exec.)
+VALID. (em exec.)
+PLAN. (ok)
+PROD. (ok)
+ORIGINAL (em exec.)
+PLANEJAMENTO (em exec.)
+ATIV RES (ok)
+PLANEJAMENTO (ok)
+CHECKLIST ORIG (ok)
+CHECKLIST ORIG (em exec.)
+ATIV RES (em exec.)
+ORIGINAL (ok)
+
+
+
